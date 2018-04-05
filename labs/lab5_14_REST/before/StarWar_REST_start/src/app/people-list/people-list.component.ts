@@ -9,7 +9,7 @@ import { PeopleService } from "../people.service";
   <ul>
     <li *ngFor="let person of people">
       <a [routerLink]="['/persons', person.id]">
-        {{person.name}} 
+        {{person.name}}
       </a>
     </li>
   </ul>
