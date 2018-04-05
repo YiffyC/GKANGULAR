@@ -1,0 +1,11 @@
+<p>
+  Inscription
+</p>
+<form (ngSubmit)="register()" [ngFormModel]="userForm">
+  <div>
+    <label>Username</label>
+    <input ngControl="username">
+  </div>
+
+<button type="submit">Save</button>
+</form>

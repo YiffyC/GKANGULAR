@@ -1,0 +1,15 @@
+<div class="bordure">
+  <h1>
+    <ng-content></ng-content>
+  </h1>
+
+  <!-- Le jeu -->
+  <input type="number" [(ngModel)]="nb">
+  <h2>
+    <p *ngIf="nb<nbGold">Too small</p>
+    <p *ngIf="nb>nbGold">Too big</p>
+    <p *ngIf="nb==nbGold">GG WP</p>
+  </h2>
+  <!-- fin jeu -->
+
+</div>
